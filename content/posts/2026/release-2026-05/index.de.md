@@ -1,5 +1,5 @@
 ---
-title: "🐝🐮 Mooay 2026 | Just another security update - Revision A"
+title: "🐝🐮 Mooay 2026 | Just another security update - Revision B"
 date: 2026-05-12T08:00:00+02:00
 draft: false
 
@@ -10,6 +10,27 @@ license: ""
 
 tags: ["2026", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+## 2026-05b (Veröffentlichung: 21. Mai 2026)
+
+Dieses Update aktualisiert **Nginx auf Version 1.30.1**.
+
+### Behobene Probleme
+
+* [Web] escape HTML in quarantine table by @FreddleSpl0it ➡️ [PR #7241](https://github.com/mailcow/mailcow-dockerized/pull/7241)
+
+### Updates
+
+* [Nginx] Update to 1.30.1 by @FreddleSpl0it ➡️ [PR #7240](https://github.com/mailcow/mailcow-dockerized/pull/7240)
+* Add Uzbek language by @Jahongir-Qurbonov ➡️ [PR #7224](https://github.com/mailcow/mailcow-dockerized/pull/7224)
+* Translations update from Weblate by @milkmaker ➡️ [PR #7228](https://github.com/mailcow/mailcow-dockerized/pull/7228)
+* Update devops-infra/action-pull-request action to v1.1.1 by @renovate[bot] ➡️ [PR #7234](https://github.com/mailcow/mailcow-dockerized/pull/7234)
+
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-05a...2026-05b](https://github.com/mailcow/mailcow-dockerized/compare/2026-05a...2026-05b)
 
 ---
 
