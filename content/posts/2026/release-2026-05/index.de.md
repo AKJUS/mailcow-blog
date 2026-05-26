@@ -1,5 +1,5 @@
 ---
-title: "🐝🐮 Mooay 2026 | Just another security update - Revision B"
+title: "🐝🐮 Mooay 2026 | Just another security update - Revision C"
 date: 2026-05-12T08:00:00+02:00
 draft: false
 
@@ -10,6 +10,31 @@ license: ""
 
 tags: ["2026", "update", "changelog"]
 categories: ["Updates"]
+
+---
+
+## 2026-05c (Veröffentlichung: 26. Mai 2026)
+
+Dieses Update behebt **CVE-2026-33278** in unbound und aktualisiert **Nginx auf Version 1.30.2**.
+
+**Wir empfehlen dringend, auf diese Version zu aktualisieren.**
+
+### Behobene Probleme
+
+* fix unbound CVE-2026-33278 by @SYNLINQ ➡️ [PR #7252](https://github.com/mailcow/mailcow-dockerized/pull/7252)
+* [Nginx] Update to 1.30.2 by @FreddleSpl0it ➡️ [PR #7259](https://github.com/mailcow/mailcow-dockerized/pull/7259)
+
+### Updates
+
+* Translations update from Weblate by @milkmaker ➡️ [PR #7245](https://github.com/mailcow/mailcow-dockerized/pull/7245)
+* Update actions/stale action to v10.3.0 by @renovate[bot] ➡️ [PR #7242](https://github.com/mailcow/mailcow-dockerized/pull/7242)
+* Update devops-infra/action-pull-request action to v1.1.2 by @renovate[bot] ➡️ [PR #7247](https://github.com/mailcow/mailcow-dockerized/pull/7247)
+* Update devops-infra/action-pull-request action to v1.1.3 by @renovate[bot] ➡️ [PR #7253](https://github.com/mailcow/mailcow-dockerized/pull/7253)
+* Update devops-infra/action-pull-request action to v1.2.0 by @renovate[bot] ➡️ [PR #7254](https://github.com/mailcow/mailcow-dockerized/pull/7254)
+
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-05b...2026-05c](https://github.com/mailcow/mailcow-dockerized/compare/2026-05b...2026-05c)
 
 ---
 
