@@ -1,6 +1,6 @@
 ---
 title: "🏖️🐮 Mooly 2026 | Postfix 3.10.12, Rspamd 4.1.0 & Nginx 1.30.3"
-date: 2026-07-13T11:00:00+02:00
+date: 2026-07-30T11:00:00+02:00
 draft: false
 
 author: The Infrastructure Company GmbH
@@ -10,6 +10,44 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-07a (Veröffentlichung: 30. Juli 2026)
+
+Dieses Revisions-Update behebt mehrere **sicherheitsrelevante Probleme** in mailcow, aktualisiert **rspamd auf 4.1.4** und schließt **CVE-2026-42533** in Nginx. Letztere war für mailcow nicht zwingend kritisch, wir aktualisieren aber trotzdem sicherheitshalber. Außerdem haben wir noch ein paar Bugs behoben.
+
+**Wir empfehlen dringend, eure mailcow-Installation so schnell wie möglich auf diese Version zu aktualisieren.**
+
+**Wichtiger Hinweis:** Die mailcow-bezogenen CVE-Identifikatoren werden spätestens nächste Woche veröffentlicht.
+
+### Updates & Security
+
+* [Rspamd] update to 4.1.4 by @FreddleSpl0it ➡️ [PR #7386](https://github.com/mailcow/mailcow-dockerized/pull/7386)
+* Fix nginx CVE-2026-42533 by @SYNLINQ ➡️ [PR #7358](https://github.com/mailcow/mailcow-dockerized/pull/7358)
+* Hardening mailcow by @FreddleSpl0it ➡️ [PR #7387](https://github.com/mailcow/mailcow-dockerized/pull/7387)
+* Update actions/stale action to v11 by @renovate[bot] ➡️ [PR #7375](https://github.com/mailcow/mailcow-dockerized/pull/7375)
+
+### Bug Fixes
+
+* fix: restore subject display in quarantine overview by @oidipos ➡️ [PR #7367](https://github.com/mailcow/mailcow-dockerized/pull/7367)
+* [Nginx] only bind IPv6 default_server when ENABLE_IPV6 is set by @smpaz7467 ➡️ [PR #7343](https://github.com/mailcow/mailcow-dockerized/pull/7343)
+* [Web] fix add/time_limited_alias silently discarding requests and validity by @smpaz7467 ➡️ [PR #7345](https://github.com/mailcow/mailcow-dockerized/pull/7345)
+* [Web] return sender_acl in get/mailbox API by @smpaz7467 ➡️ [PR #7348](https://github.com/mailcow/mailcow-dockerized/pull/7348)
+* fix: cors allowed origins settings validation by @fallmo ➡️ [PR #7333](https://github.com/mailcow/mailcow-dockerized/pull/7333)
+* [Web] harden CORS origin matching and add Vary: Origin by @FreddleSpl0it ➡️ [PR #7385](https://github.com/mailcow/mailcow-dockerized/pull/7385)
+* [Web] Move mailcow update check to server side by @FreddleSpl0it ➡️ [PR #7388](https://github.com/mailcow/mailcow-dockerized/pull/7388)
+* [Web] Create default mailbox template with eas and dav access by @FreddleSpl0it ➡️ [PR #7389](https://github.com/mailcow/mailcow-dockerized/pull/7389)
+* [ACME] Skip mta-sts certificate request when MTA-STS is not active for a domain by @FreddleSpl0it ➡️ [PR #7390](https://github.com/mailcow/mailcow-dockerized/pull/7390)
+
+### New Contributors
+
+* @oidipos made their first contribution ➡️ [PR #7367](https://github.com/mailcow/mailcow-dockerized/pull/7367)
+* @smpaz7467 made their first contribution ➡️ [PR #7343](https://github.com/mailcow/mailcow-dockerized/pull/7343)
+* @fallmo made their first contribution ➡️ [PR #7333](https://github.com/mailcow/mailcow-dockerized/pull/7333)
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-07...2026-07a](https://github.com/mailcow/mailcow-dockerized/compare/2026-07...2026-07a)
 
 ---
 
