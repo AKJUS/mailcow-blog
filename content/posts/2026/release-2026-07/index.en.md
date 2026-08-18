@@ -1,6 +1,6 @@
 ---
 title: "🏖️🐮 Mooly 2026 | Postfix 3.10.12, Rspamd 4.1.0 & Nginx 1.30.3"
-date: 2026-07-30T11:00:00+02:00
+date: 2026-08-18T09:00:00+02:00
 draft: false
 
 author: The Infrastructure Company GmbH
@@ -10,6 +10,39 @@ license: ""
 
 tags: ["2026", "update", "changelog", "major"]
 categories: ["Updates"]
+
+---
+
+## 2026-07b (Release: 18th August 2026)
+
+This revision update bumps **Redis to 7.4.10**, **SOGo to 5.12.10** and **ClamAV to 1.4.6**, addressing multiple security issues in these components. It also ships some **minor hardening across the web UI and Nginx** as well as a few smaller fixes.
+
+**We strongly recommend updating your mailcow instance to this version.**
+
+### Updates & Security
+
+* [Redis] Update to 7.4.10 by @FreddleSpl0it ➡️ [PR #7425](https://github.com/mailcow/mailcow-dockerized/pull/7425)
+* [SOGo] Update to 5.12.10 by @FreddleSpl0it ➡️ [PR #7422](https://github.com/mailcow/mailcow-dockerized/pull/7422)
+* [Clamd] Update to 1.4.6 by @FreddleSpl0it ➡️ [PR #7415](https://github.com/mailcow/mailcow-dockerized/pull/7415)
+* [Web] Minor hardening across web UI and nginx by @FreddleSpl0it ➡️ [PR #7426](https://github.com/mailcow/mailcow-dockerized/pull/7426)
+
+### Bug Fixes
+
+* [Dovecot] Remove legacy DeltaChat auto-filing sieve rule by @FreddleSpl0it ➡️ [PR #7423](https://github.com/mailcow/mailcow-dockerized/pull/7423)
+
+### Updates
+
+* [Postfix] update postscreen_access.cidr by @milkmaker ➡️ [PR #7394](https://github.com/mailcow/mailcow-dockerized/pull/7394)
+* update README.md sponsors by @MaximalBenedikt ➡️ [PR #7392](https://github.com/mailcow/mailcow-dockerized/pull/7392)
+* update README.md sponsors by @MaximalBenedikt ➡️ [PR #7393](https://github.com/mailcow/mailcow-dockerized/pull/7393)
+* Translations update from Weblate by @milkmaker ➡️ [PR #7400](https://github.com/mailcow/mailcow-dockerized/pull/7400)
+
+### New Contributors
+
+* @MaximalBenedikt made their first contribution ➡️ [PR #7392](https://github.com/mailcow/mailcow-dockerized/pull/7392)
+
+### Full Changelog
+[https://github.com/mailcow/mailcow-dockerized/compare/2026-07a...2026-07b](https://github.com/mailcow/mailcow-dockerized/compare/2026-07a...2026-07b)
 
 ---
 
